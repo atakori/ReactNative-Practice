@@ -6,7 +6,7 @@ import Header from './src/components/header';
 //create component
 const App = () => {
 	return (
-		<Header/>
+		<Header headerText='Albums'/>
 	)
 }
 
