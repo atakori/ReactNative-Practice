@@ -33,7 +33,9 @@ import Button from './button';
 					</CardSection>
 
 					<CardSection>
-						<Button onPress= {() => Linking.openURL(url)} />
+						<Button onPress= {() => Linking.openURL(url)}>
+							<Text>Buy Me!</Text>
+						</Button>
 					</CardSection>
 				</Card>
 			);
