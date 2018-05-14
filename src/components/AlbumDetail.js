@@ -2,6 +2,7 @@ import React from 'react';
 import { Text, View, Image } from 'react-native';
 import Card from './Card';
 import CardSection from './CardSection';
+import Button from './button';
 
 	const AlbumDetail = ({ album }) => {
 		const {title, artist, thumbnail_image, image} = album;
@@ -29,7 +30,11 @@ import CardSection from './CardSection';
 					</CardSection>
 					<CardSection>
 						<Image style={imageStyle} source= {{uri: image}} />
-					</CardSection> 
+					</CardSection>
+					 
+					<CardSection>
+						<Button />
+					</CardSection>
 				</Card>
 			);
 	};
@@ -38,7 +43,6 @@ import CardSection from './CardSection';
 		headerContentStyle: {
 			flexDirection: 'column',
 			justifyContent: 'space-around',
-
 		},
 		headerTextStyle: {
 			fontSize: 18
